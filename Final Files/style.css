@@ -1,0 +1,888 @@
+/* Reset and Common Styles */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;   /* Jost */
+  font-weight: 400;
+}
+
+@import url("color.css");
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.section-heading {
+  font-size: 5rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-bottom: 15rem;
+  border-bottom: 0.3rem solid #333;
+  text-shadow: 0.2rem 0.2rem 0.5rem #555;
+}
+/* End of Reset and Common Styles */
+
+/* Section 1 */
+
+
+
+
+/* End of Section 1 */
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 4rem;
+  background-color: #e41c6f;
+  box-shadow: 0.2rem 0.2rem 0.5rem #555;
+  position: absolute;
+  z-index: 300;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.navbar-link {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 3rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.change.navbar-link {
+  color: #fff;
+}
+
+.navbar-link:hover {
+  color: #fff;
+}
+
+.navbar-link::before {
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  background-color: #fff;
+  position: absolute;
+  right: -15%;
+  bottom: -0.3rem;
+  transition: width 0.2s;
+}
+
+.change.navbar-link::before {
+  width: 130%;
+}
+
+.navbar-link:hover::before {
+  width: 130%;
+}
+/* End of Navbar */
+
+
+
+
+
+
+/* Section 4   (First Section) */
+.section-4 {
+  width: 100%;
+  height: 200vh;                         /* height */
+  background-image: url('images/juan-mendez.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+.Call-form {
+  margin-top:4%;
+  width: 40%;
+  height:auto;
+  flex-direction: column;
+  background-color:rgba(255, 255, 255, 0.915);
+  border-radius: 10px;
+  padding:0.5rem 1rem;
+  border-color:#183153;
+  border-width:2px;
+  display:flex;
+  flex-direction:column;
+  box-shadow: 0px 5px 0px 5px #183153; /* to give the downward shadow effect */
+  border-top-width:3px;
+  border-top-color:#183153;
+}
+
+.special-headline-container{
+  margin-top:5%;
+  width:86%;
+  text-align:center;
+  align-items:center;
+  align-self:center;
+  height:auto;
+}
+.section-4-heading {
+  color: black;
+  font-size: 5rem;
+  align-self:center;
+  width: 100%; /* to fill the width of the container */
+  background-color: transparent;
+  height:auto;
+
+}
+
+.special-out{
+  color:var(--oc-yellow-7);
+}
+
+.introduction{
+  align-self:center;
+  margin-top:10px;
+  font-size:2rem;
+  width:100%;
+  background-color: transparent;
+  height:auto;
+}
+
+.workwife{
+  font-weight:bold;
+}
+
+
+.short-button-group{
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  margin-bottom:2%;
+  
+}
+
+.hefty-button {
+  height:auto;
+  width:auto;
+  margin:2%;
+  font-size:22px;
+  letter-spacing: 4px;
+  padding: 0.5rem 1rem;
+  background-color:var(--oc-yellow-6);
+  color:#183153;
+  border-radius:5px;
+  border-width:4px;
+  border-color:#183153;
+  
+  box-shadow: 0px 4px 0px 3px #183153; /* to give the downward shadow effect */
+
+  
+}
+
+.hefty-button i {
+  margin-right: 0.5rem; /* to place the fontawesome icon */
+  color:#183153;
+}
+
+
+
+
+.caller-pinboard-card{
+  border-radius:10px;
+  outline:lightgray solid 3px;
+  font-weight: bold;
+  height:fit-content;
+  align-items:center;
+  width:50%;
+  align-self:center;
+  font-size: 2em; /* set the font size */
+  text-align: center; /* center the text */
+  padding: 10px; /* add some padding */
+  background-color: beige; /* set a background color */
+  margin-bottom:1%;
+}
+
+.Call-form input,
+.Call-form textarea {
+  align-self:center;
+  border-radius:10px;
+  width: 70%;
+  padding: 0.7rem;
+  margin: 1.5rem 0;
+  border-width:2px;
+  border-color:#183153;
+
+ 
+  font-size: 2rem;
+  background-color: 0.2rem solid beige;
+  color: black;
+}
+
+.Call-form input:focus{
+  outline-offset:2px;
+  outline-style:solid;
+  outline-width:3px;
+  outline-color:#ed3783;
+}
+
+.Call-form textarea {
+  height: 10rem;
+  max-height: 17rem;
+  max-width: 100%;
+}
+
+.Call-form .Call-form-btn {
+  background-color: beige;
+  border: 0.2rem dashed black;
+  
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.Call-form .Call-form-btn:hover {
+  background-color: #e41c6f;
+  color:#fff;
+  border:0.2rem solid black;
+}
+
+
+/*Contact Cards */
+
+.card-container {
+  height: auto; 
+  margin-top:5%;
+  padding-bottom:4%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(auto-fill, minmax(180px, 1fr));
+  overflow-y:auto;
+
+  background:transparent;
+  justify-content:space-evenly;
+
+
+  
+  
+}
+
+.call-card {
+  width: 260px; /* adjust the width as needed */
+  height: 300px; /* adjust the height as needed */
+  border-color: var(--card-bg-color); /* set the background color */
+  border-width:10px;
+  background-color:beige;
+  box-shadow: 0 2px 4px 0 var(--card-bg-color); /* add a box shadow */
+
+  outline:var(--card-bg-color) solid 4px;
+  border-radius: 10px; /* add a border radius */
+  /* overflow: hidden; hide content that overflows the card */
+  margin:10px;
+  padding: 2px; /* add some padding */
+  transition:all 0.15s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
+@media screen and (max-width: 1500px) {
+  .card-container {
+    grid-template-columns: repeat(4,1fr);
+    width:100%;
+  }
+  .call-card{
+    width:220px;
+    height:240px;
+
+ 
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card-container {
+    grid-template-columns: repeat(3,1fr);
+    width:100%;
+  }
+  .call-card{
+    width:200px;
+    height:230px;
+ 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2,1fr);
+    width:100%;
+  }
+  .call-card{
+    width:160px;
+    height:200px;
+ 
+  }
+}
+
+
+
+
+.call-icon{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 20px;
+  color: #183153;
+}
+
+
+
+
+.call-card:hover {
+  transform: scale(1.015);
+  box-shadow: 0px 4px 8px #aaa;
+
+}
+
+
+.call-card h3 { /* style the heading */
+  margin: 0.7rem;
+  padding: 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.call-card p { /* style the paragraphs */
+  margin: 0.6rem;
+  padding: 0;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+#delete-button {
+  background-image: url('images/TrashIcon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width:20%;
+  height:20%;
+  border-color:black;
+  border-radius:2px;
+  transition:all 0.15s ease-in-out;
+}
+
+#delete-button:hover {
+  box-shadow: 2px 1.6px 1.6px rgb(173, 96, 96);
+}
+
+
+.light-top-line {
+  border-bottom: 10px dotted lightpink;
+  border-spacing:30px;
+  margin-top:30px;
+  width: 100%;
+  height:0%;
+  
+
+}
+
+.transparent-dotted-line {
+  border-style: dotted;
+  border-width: 1px;
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect x='0' y='0' width='4' height='4' fill='none' stroke='%23000000' stroke-width='1' stroke-dasharray='1,1' stroke-opacity='0' stroke-linecap='square'/%3E%3C/svg%3E") 1;
+}
+
+
+
+/* End of Contact Cards */
+/* End of Section 4 (First Section) */
+
+/* section-X */
+
+
+.section-X {
+  width: 100%;
+  height: auto;                         /* height */
+
+  background-image: url('images/triangle-by-freepik.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.quote-section{
+  height:auto;
+  width:100%;
+  align-items:center;
+  justify-content: center;
+  background-color: #183153;
+  color:beige;
+  padding-top:80px;
+  padding-bottom:30px;
+  margin:0 auto;
+}
+
+.quote-container{
+  width:64%;
+
+}
+
+
+
+.quote{
+  font-size:30px;
+  font-weight:bold;
+  letter-spacing: 10px;
+  color:beige;
+  line-height:1.5;
+  text-align:right;
+}
+
+.icon-container{
+  display:flex;
+  flex-direction:row;
+  font-size:25px;
+  font-weight: bold;
+  padding:10px;
+  background-color:#183153;
+  color:var(--oc-yellow-3);
+  align-items:center;
+  justify-content: space-evenly;
+}
+.icon-item{
+  margin:10px;
+}
+
+@media screen and (max-width: 768px) {
+  .section-X{
+    background-image:url('images/triangle-by-freepik-1.jpg');
+  }
+  .quote-container{
+    width:90%;
+  }
+  .icon-container{
+    
+    padding:3px;
+    font-size:10px;
+  }
+
+}
+
+.task-feature-intro{
+  width:100%;
+  padding:1%;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.task-feature-button{
+  width:auto;
+  height:auto;
+  font-size:22px;
+  letter-spacing: 4px;
+  padding: 0.5rem 1rem;
+  background-color:var(--oc-yellow-6);
+  color:#183153;
+  border-radius:5px;
+  border-width:4px;
+  border-color:#183153;
+  
+  box-shadow: 0px 4px 0px 3px #183153; /* to give the downward shadow effect */
+
+  
+}
+
+
+
+.task-feature-button i {
+  margin-right: 0.5rem; /* to place the fontawesome icon */
+  color:#183153;
+}
+
+
+@media screen and (max-width: 768px) {
+  .task-feature-button{
+    width:90%;
+    font-size:12px;
+    font-weight: bold;
+  }
+}
+
+
+
+.Task-Manager-Container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:10px;
+
+
+}
+
+.parent-task-container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+
+.Task-form{
+
+  display: flex;
+  flex-wrap: wrap;
+  height:60vh;
+  width:70%;
+  margin:2%;
+  padding:4%;
+  align-items: center;
+  /* justify-content: space-between; */
+  flex-direction:column;
+  background-image: url('images/andrea-piacquadio.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius:10px;
+  outline:solid 5px #183153;
+ 
+ 
+
+
+ 
+}
+
+.Task-form:hover{
+  box-shadow: 3px 5px 1px 1px var(--oc-blue-2);
+}
+
+
+
+.rounded-input{
+  flex:1;
+  margin:4%;
+  width:80%;
+
+  font-size-adjust: auto;
+  border-radius:15px;
+  border-color:black;
+  border-width:2px;
+  padding-left:2%;
+  background-color:rgba(255, 255, 255, 0.764);
+}
+
+.rounded-input:focus {
+  outline-offset:1px;
+  outline-style:solid;
+  outline-width:2px;
+  outline-color:lightskyblue;
+}
+
+
+
+.rounded-input::placeholder {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f03a';  /* fa-search icon */
+  text-transform: lowercase;
+  letter-spacing: 5px;
+  
+}
+
+
+.Task-form-btn{
+  flex:1;
+  width:80%;
+  background-color: var(--oc-cyan-4);
+  color:white;
+  font-size:14px;
+  border-radius:15px;
+  margin:10px;
+  height:auto;
+  font-size:20px;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 1;
+  text-transform: uppercase;
+
+} 
+
+
+.Task-form-btn:hover{
+  background-color:var(--oc-cyan-5);
+
+} 
+
+
+/* End of Input Form */
+/* Start of Task Card Container */
+
+.Task-Card-Container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-top:2%;
+}
+
+.task-card {
+  flex:0 0 auto;
+  margin-right: 8px; /* space between cards */
+  margin-left:8px;
+  height:90%;
+  width:300px;
+  border-color: var(--card-bg-color); /* set the background color */
+  border-width:10px;
+  background-color:beige;
+  box-shadow: 0 2px 4px 0 var(--card-bg-color); /* add a box shadow */
+
+  outline:var(--card-bg-color) solid 4px;
+  background-color: rgba(255, 255, 255, 0.626);
+
+  border-radius: 10px;
+ 
+  padding: 2%; /* add some padding */
+  transition:all 0.15s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow:visible;
+  position:relative;
+  cursor:pointer;
+}
+
+
+.task-card i{
+  
+    font-size: 5em; /* adjust the size of the icon */
+    position: absolute; /* position the icon absolutely */
+    top: 5%; /* position the icon at the top of the card */
+    left: 5%; /* position the icon at the left of the card */
+    color:var(--oc-blue-7); /* color the icon */
+  
+}
+
+.task-card h3 { /* style the heading */
+  margin: 0.7rem;
+  padding: 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.task-card p { /* style the paragraphs */
+  margin: 1rem;
+  align-self:center;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+#delete-task-button{
+  position: absolute;
+  bottom: 10px;
+  
+  background-image: url('images/TrashIcon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: #ccc;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+#delete-task-button:hover {
+  background-color: #f44336;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+
+
+/* Responsive styles */
+
+
+
+@media screen and (max-width: 768px) {
+  .Task-Manager-Container {
+    flex-direction: column;
+    display:flex;
+
+  }
+  .section-X{
+    height:200vh;
+  }
+  
+  .Task-Card-Container{
+    flex-wrap:wrap;
+    overflow-x:visible;
+    overflow-y:auto;
+    height:80vh;
+  }
+ .task-card{
+     width:90%;
+     margin:auto;
+     align-self:center;
+     height:80%;
+     margin-right:5%;
+     margin-bottom:10px;
+  }
+    
+}
+
+
+
+
+/* Footer  */
+
+
+/* Section 2 */
+.section-2 {
+  width: 100%;
+  height: 40vh;
+  padding: 2rem 0 3rem 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('images/asian-girl-freepik.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+
+
+
+#animated-text-btm{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: lowercase;
+  color:var(--oc-yellow-6);
+  font-weight:bold;
+  text-align:center;
+  font-size:5em;
+  height:100%;
+}
+
+.copyright {
+  color: #aaa;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+
+/* Responsive */
+@media (max-width: 1200px) {
+ 
+
+  .section-4 {
+    height: 200vh;
+  }
+
+  .Call-form {
+    width:80%;
+  }
+  .hefty-button{
+    font-size:15px;
+    letter-spacing:0;
+  }
+  .Call-form input, .Call-form textarea{
+    margin:4px;
+  }
+}
+
+@media (max-width: 800px) {
+  
+}
+
+@media (max-width: 600px) {
+  
+
+  .navbar-link {
+    margin: 0 2rem;
+    font-size: 1.5rem;
+  }
+
+  .section-2 {
+    padding: 10rem;
+  }
+
+  .section-2-heading {
+    margin-bottom: 10rem;
+  }
+
+  
+
+  
+
+  .Call-form {
+    width: 40rem;
+  }
+
+  .copyright {
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 45%;
+  }
+
+  .section-1-heading {
+    font-size: 2.5rem;
+  }
+
+  .navbar-link {
+    margin: 0 1.5rem;
+  }
+
+  .section-2-heading {
+    text-align: center;
+  }
+
+
+}
+/* End of Responsive */
+
+
+
+
+
+
