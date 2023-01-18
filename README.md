@@ -12,10 +12,11 @@ The system could be implemented as a web-based application, giving users the fle
 
 ## Built With
 
-Simple one-page Webapp built with HTML, CSS and Javascript
+Simple Responsive one-page Webapp built with HTML, CSS and Javascript
 
 
 ![Screenshot of the application](https://github.com/maxxuUNC33/workwife-workspaceMng/blob/main/Final%20Files/images/Screenshot_90.png)
+![Screenshot 2 of the application](https://github.com/maxxuUNC33/workwife-workspaceMng/blob/main/Final%20Files/images/Screenshot_91.png)
 
 
 
